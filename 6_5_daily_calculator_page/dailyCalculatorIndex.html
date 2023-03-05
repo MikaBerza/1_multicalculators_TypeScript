@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap-styles -->
+  <link rel="stylesheet" href="/6_5_daily_calculator_page/bootstrap.min.css">
+  <!-- Сustom-styles -->
+  <link rel="stylesheet" href="/6_5_daily_calculator_page/dailyCalculatorCustomStyle.css">
+  <!-- dailyCalculatorScriptFromDateToDate-script -->
+  <script defer src="/6_5_daily_calculator_page/dailyCalculatorScriptFromDateToDate.js"></script>
+  <!-- dailyCalculatorScriptFromTheCurrentDay-script -->
+  <script defer src="/6_5_daily_calculator_page/dailyCalculatorScriptFromTheCurrentDay.js"></script>
+  <!-- dailyCalculatorScriptLeapYear-script -->
+  <script defer src="/6_5_daily_calculator_page/dailyCalculatorScriptLeapYear.js"></script>
+
+  <title>Дневной - калькулятор</title>
+</head>
+
+<body>
+  <main>
+    <!-----SectionOne--------------------------------------------------------------------------->
+    <section class="section-one">
+      <div class="container-xxl">
+        <h2 class="card-title">Дневной - калькулятор</h2>
+      </div>
+      <div class="card">
+        <h4 class="card-title h4__item">
+          Вычислитель дней - позволяет вычислить количество дней между начальной и конечной датой.
+          Вычислитель даты - позволяет узнать какая дата и день недели будут через определенное число дней относительно
+          текущей даты.
+          Вычислитель года - позволяет определить, является ли год високосным или нет.
+        </h4>
+        <img src="/6_5_daily_calculator_page/img/iconDaily.png" class="card-img-top" alt="...">
+        <!-- Вычислитель дней. Блок определяет кол-во дней которое прошло от даты к дате-->
+        <div class="card-body">
+          <h5 class="card-text h4__item">Вычислитель дней. Введите начальную и конечную дату</h5>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Нач.дата</span>
+            <input id="inputDateWith" type="date" class="form-control" value="">
+            <span class="input-group-text">Кон.дата</span>
+            <input id="inputDateBefore" type="date" class="form-control" value="">
+            <button id="btnСalculation" type="button" class="btn btn-success">Расчитать</button>
+          </div>
+        </div>
+      </div>
+      <!--↓ Неактивный блок, активируется после выполнения расчета в скрипте (dailyCalculatorScriptFromDateToDate.js) ↓-->
+      <div class="requirement">
+        <p id="formOutputImg" class="outputInActiveTwoImg"></p>
+        <p id="formOutput" class="outputInActiveTwo" value=""></p>
+      </div>
+      <!--↑ Неактивный блок, активируется после выполнения расчета в скрипте (dailyCalculatorScriptFromDateToDate.js) ↑-->
+
+      <!-- Вычислитель даты. Блок определения дату (д/м/г) по введенному колличеству дней с текущего дня -->
+      <div class="card-body">
+        <h5 class="card-text h4__item">Вычислитель даты. Введите число дней</h5>
+        <div class="input-group mb-3">
+          <span class="input-group-text">День</span>
+          <input id="inputDay" placeholder="дд" type="number" class="form-control" value="" autocomplete="off">
+          <button id="btnСalculationDay" type="button" class="btn btn-primary">Расчитать</button>
+        </div>
+        <!--↓ Неактивный блок, активируется после выполнения расчета в скрипте (dailyCalculatorScriptFromTheCurrentDay.js) ↓-->
+        <div class="text3d-wrap-1">
+          <p id="formOutputDay" class="outputInActiveDay" value=""></p>
+        </div>
+        <!--↑ Неактивный блок, активируется после выполнения расчета в скрипте (dailyCalculatorScriptFromTheCurrentDay.js) ↑-->
+      </div>
+
+      <!-- Вычислитель года. Блок определяет високосный или невисокосный год -->
+      <div class="card-body">
+        <h5 class="card-text h4__item">Вычислитель года. Введите год</h5>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Год</span>
+          <input id="inputYear" placeholder="гггг" type="number" class="form-control" value="" autocomplete="off">
+          <button id="btnСalculationYear" type="button" class="btn btn-danger">Расчитать</button>
+        </div>
+        <!--↓ Неактивный блок, активируется после выполнения расчета в скрипте (dailyCalculatorScriptFromTheCurrentDay.js) ↓-->
+        <div class="text3d-wrap-1">
+          <p id="formOutputYear" class="outputInActiveYear" value=""></p>
+        </div>
+        <!--↑ Неактивный блок, активируется после выполнения расчета в скрипте (dailyCalculatorScriptFromTheCurrentDay.js) ↑-->
+      </div>
+
+    </section>
+  </main>
+
+</body>
+
+</html>
