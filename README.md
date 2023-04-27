@@ -1,36 +1,11 @@
-### Название проекта - "Мульти вычислители"
+> ### Проект - "1_multicalculators_TypeScript"
 
-> цель:dart:: изучение текстового редактора Visual Studio Code, языка гипертекстовой разметки HTML, языка таблиц стилей CSS, интерфейсного фреймворка Bootstrap, графического редактора Figma, многофункциональный графический редактор Adobe Photoshop, языка программирования JavaScript, TypeScript, JavaScript-библиотеки React для создания пользовательских интерфейсов, сборщика модулей Webpack
+#### Сводная таблица названий приложений проекта
 
----
-
-#### :bulb:Идея выполнения данного проекта
-
-Изучить вышеперечисленные технологии, разрабатывая при этом полезные (прикладные) приложения для домашнего использования. Приложения данного проекта частично заменят вам рутинные бытовые операции и поднимут настроение.
-
-#### :heavy_exclamation_mark:Логика выполнения проекта
-
-- первый этап - **1_multicalculators_JavaScript**, создание полного проекта с его приложениями, на нативном JavaScript, HTML, CSS, Webpack, Bootstrap, Figma.
-- второй этап - **1_multicalculators_React**, переписывание отдельных частей проекта с JavaScript на React.
-- третий этап - **1_multicalculators_TypeScript**, переписывание отдельных частей проекта с JavaScript на TypeScript.
-
----
-
-#### :deciduous_tree:Дерево информации каталога (1_multicalculators_TypeScript)
-
-:file_folder: 1_multicalculators_TypeScript
-
-- :file_folder:6_5_dailyCalculatorPage
-- :file_folder:6_10_passwordGeneratorPage
-
----
-
-#### Таблица готовности разделов проекта
-
-| Раздел                     | Название разделов проекта | :heavy_check_mark: / :x: | Процент, % |
-| :------------------------- | :------------------------ | :----------------------: | :--------: |
-| 6_5_dailyCalculatorPage    | Дневной - калькулятор     |    :heavy_check_mark:    |    100     |
-| 6_10_passwordGeneratorPage | Генератор паролей         |    :heavy_check_mark:    |    100     |
+| Раздел                       | Названия приложений проекта | :heavy_check_mark: |
+| :--------------------------- | :-------------------------- | :----------------: |
+| 6_5_daily_calculator_page    | Дневной - калькулятор       | :heavy_check_mark: |
+| 6_10_password_generator_page | Генератор паролей           | :heavy_check_mark: |
 
 ---
 
